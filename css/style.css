@@ -47,7 +47,7 @@ body {
 @media only screen and (max-width: 68.75em) {
   .container {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     border-radius: 0;
   }
 }
@@ -150,10 +150,11 @@ body {
   cursor: pointer;
 }
 
-.btn-tiny svg {
+.btn-tiny i {
   height: 100%;
   width: 100%;
-  fill: #F59A83;
+  font-size: 1.7em;
+  color: #F59A83;
   transition: all .3s;
 }
 
@@ -161,12 +162,12 @@ body {
   outline: none;
 }
 
-.btn-tiny:hover svg {
+.btn-tiny:hover i {
   fill: #F48982;
   transform: translateY(-1px);
 }
 
-.btn-tiny:active svg {
+.btn-tiny:active i {
   fill: #F48982;
   transform: translateY(0);
 }
@@ -230,7 +231,7 @@ body {
 
 .header {
   grid-area: head;
-  background-color: #fdf0cd82;
+  background-color: #fdf0cd;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -290,7 +291,7 @@ body {
 }
 
 .likes__field:hover {
-  background-color: #F2EFEE;
+  background-color: #fff;
 }
 
 .likes__panel:hover,
@@ -342,7 +343,7 @@ body {
 
 .results__link:hover,
 .likes__link:hover {
-  background-color: #fdf0cd82;
+  background-color: #fdf0cd;
   transform: translateY(-2px);
 }
 
@@ -426,7 +427,7 @@ body {
 }
 
 .recipe {
-  background-color: #fdf0cd82;
+  background-color: #fdf0cd;
 }
 
 .recipe__fig {
@@ -547,10 +548,11 @@ body {
 }
 
 .recipe__ingredients {
+  border: 2px solid #fdf0cd;
   padding: 4rem 5rem;
   font-size: 1.5rem;
   line-height: 1.4;
-  background-color: #F2EFEE;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -615,7 +617,6 @@ body {
 .shopping__list {
   list-style: none;
   max-height: 77rem;
-  overflow: scroll;
 }
 
 .shopping__item {
@@ -643,7 +644,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   border: none;
-  width: 3.7rem;
+  width: 4.6rem;
   border-radius: 3px;
 }
 
